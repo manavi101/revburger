@@ -2,11 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Hello from './Hello';
 import * as serviceWorker from './serviceWorker';
+
+
+
+
+function Prueba() {
+  return (
+    <div className="prueba">
+      hello
+    </div>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Prueba />
+    <Hello />
   </React.StrictMode>,
   document.getElementById('root')
 );
