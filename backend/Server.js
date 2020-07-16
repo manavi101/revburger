@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -12,6 +13,11 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`app running on port ${PORT}`)
+});
+
+app.use(express.static(path.join(__dirname, 'build')));
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.get(`/api/hello`, async (req, res) => {
