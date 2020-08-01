@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from './header/Header';
 import App from './App';
 import Hello from './Hello';
 import * as serviceWorker from './serviceWorker';
@@ -18,7 +19,7 @@ function Prueba() {
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
     <Prueba />
     <Hello />
   </React.StrictMode>,

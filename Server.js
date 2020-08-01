@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`app running on port ${PORT}`)
 });
-
+//Para produccion
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
