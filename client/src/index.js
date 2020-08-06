@@ -1,5 +1,8 @@
+import 'fontsource-roboto';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './font.css';
+import 'fontsource-roboto';
 import './index.css';
 import Header from './header/Header';
 import App from './App';
